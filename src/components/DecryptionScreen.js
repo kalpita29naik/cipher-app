@@ -26,9 +26,9 @@ function DecryptionScreen() {
  };
 
  return (
-  <div className="flex flex-col md:flex-row gap-20 p-6 mt-20 justify-center items-start">
+  <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 p-6 mt-20 justify-center">
    {/* Input Section */}
-   <div className="bg-white p-6 w-full md:w-1/2 rounded-3xl shadow-md">
+   <div className="bg-white p-6 lg:w-1/2 rounded-3xl shadow-md">
     <input
      type="text"
      placeholder="Encrypted text here"
@@ -46,8 +46,8 @@ function DecryptionScreen() {
     />
    </div>
 
-   {/* Lock Button */}
-   <div className="flex justify-center items-center">
+
+   <div className="lg:w-20 justify-center items-center">
     <button onClick={handleDecryption}
      disabled={loading}
      className={`h-16 px-6 rounded-xl text-white font-semibold transition-all duration-200 ease-in-out ${loading ? "bg-gray-400 cursor-not-allowed" : "bg-[#E55050] hover:bg-[#ae3e3e] hover:scale-105"}`}
@@ -55,7 +55,7 @@ function DecryptionScreen() {
    </div>
 
    {/* Output Section */}
-   <div className="bg-white p-6 w-full md:w-1/2 rounded-3xl shadow-md">
+   <div className="bg-white p-6 w-full lg:w-1/2 rounded-3xl shadow-md">
 
     <p className="w-full min-h-[4rem] bg-[#f9f9f9] p-4 rounded-xl border border-[#d1d5db] text-gray-800 break-words">
      {decryptedText || "Decrypted text will appear here."}

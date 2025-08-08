@@ -29,8 +29,8 @@ function EncryptionScreen() {
   }
 
   return (
-    <div className="flex flex-row gap-20 p-5 mt-20 justify-center ">
-      <div className=" p-4 w-1/2 rounded-3xl">
+    <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 p-5 mt-20 justify-center ">
+      <div className=" p-4 lg:w-1/2 rounded-3xl">
         <input
           type="text"
           placeholder="Enter plain text"
@@ -40,7 +40,7 @@ function EncryptionScreen() {
         />
       </div>
 
-      <div className="w-20 justify-center items-center">
+      <div className="lg:w-20 justify-center items-center">
         <button
           onClick={handleEncryption}
           disabled={loading || !plainText}
@@ -51,7 +51,7 @@ function EncryptionScreen() {
         </button>
       </div>
 
-      <div className="bg-white p-4 w-1/2 rounded-lg">
+      <div className="bg-white p-4 lg:w-1/2 rounded-lg ">
         <p className="w-full h-20 rounded-xl border border-[#d1d5db] bg-[#f9f9f9] text-gray-800 p-3 mt-5 break-all">
           {cipherText || "Encrypted text will appear here after encryption."}
         </p>
