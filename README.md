@@ -15,8 +15,7 @@ A simple and secure **text encryption & decryption** tool built using **React.js
 
 ## 📸 Demo
 
-> Add a link to your deployed app (e.g. Netlify, Vercel) here  
-> _Example:_ https://cipher-app-demo.vercel.app
+https://cipher-app-orcin.vercel.app/
 
 ---
 
